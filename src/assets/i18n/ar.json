@@ -1,0 +1,23 @@
+{
+  "form.vacancy_title": "إعلان وظيفة الإعلان",
+  "form.costcenter": "مركز التكلفة",
+  "form.requestid": "معرف الطلب",
+  "form.department": "قسم",
+  "form.designation": "تعيين",
+  "form.job_start_date": "تاريخ بدء العمل",
+  "form.vacancy": "فرصة",
+  "form.company": "شركة",
+  "form.jobtitle": "عنوان الوظيفة",
+  "form.jobDescription": "وصف الوظيفة",
+  "form.skillsRequired": "المهارات المطلوبة",
+  "form.educationalQualifications": "المؤهلات الدراسية",
+  "form.requiredLevelExperience": "مستوى الخبرة المطلوب",
+  "form.requiredYearsofExperience": "سنوات الخبرة المطلوبة",
+  "form.jobLevel": "مستوى العمل",
+  "form.hoursPerWeek": "ساعات في الأسبوع",
+  "form.fte": "form.hoursPerWeek",
+  "form.country": "موقع العمل (بلد)",
+  "form.location": "موقع العمل",
+  "form.requiredTravel": "السفر المطلوب",
+  "form.submit": "إرسال"
+}

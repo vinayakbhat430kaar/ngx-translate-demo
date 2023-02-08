@@ -1,0 +1,232 @@
+<div>
+
+  <!-- <h2>{{ 'demo.title' | translate }}</h2>
+
+  <h3>Switch languages at runtime:</h3> -->
+
+  <select name="" id="" (click)="useLanguage($event.target)">
+    <option value="en">English</option>
+    <option value="ar">Arabic</option>
+    <!-- <option value="de">Deutsche</option> -->
+  </select>
+  <!-- <div class="box">
+    <div class="inner-box">
+      <h3>Simple translations without parameters</h3>
+
+      <h4>Pipe</h4>
+      <p>{{ 'demo.text' | translate }}</p>
+
+      <h4>Directive: key as attribute</h4>
+      <p [translate]="'demo.text'"></p>
+
+      <h4>Directive: key as content</h4>
+      <p translate>demo.text</p>
+
+    </div>
+    <div class="inner-box">
+      <h3>Translations with parameters</h3>
+
+      <h4>Pipe</h4>
+      <p>{{ 'demo.greeting' | translate:{'name':'Guru'} }}</p>
+
+      <h4>Directive: key as attribute</h4>
+      <p [translate]="'demo.greeting'" [translateParams]="{name: 'Guru'}"></p>
+
+      <h4>Directive: key as content</h4>
+      <p translate [translateParams]="{name: 'Guru'}">demo.greeting</p>
+
+    </div>
+    <div class="inner-box">
+      <h3>Using translation IDs in your component</h3>
+      <p>{{ idFromCode | translate }}</p>
+      <h3>Text translated in code</h3>
+
+      <h4>Translated once (does not support switching langues at runtime)</h4>
+      <p>{{ translatedMessageFromCode }}</p>
+
+      <h4>Continuous update (supports language switching)</h4>
+      <p>{{ continuouslyTranslatedMessage}}</p>
+    </div>
+  </div> -->
+  <div>
+    <div class="jobform-title-wrapper">
+      <div class="form-title form-title-cont-nav">
+        <div class="col-3-cust table-hed-1">
+          <h2 class="proc-table-items proc-table-item1">{{'form.vacancy_title'|translate}}</h2>
+        </div>
+        <div class="col-3-cust table-hed-2">
+          <h2 class="proc-table-items proc-table-item2">{{'form.costcenter'|translate}}: 100</h2>
+        </div>
+        <div class="col-3-cust table-hed-3">
+          <h2 class="proc-table-items proc-table-item3">SSA-HR-1001-1</h2>
+        </div>
+      </div>
+    </div>
+    <div class="job-posting-form-maincont">
+      <div class="job-form-subcont">
+        <div class="card-body-job-form">
+          <form class="row g-3">
+            <div class="col-12">
+              <label for="exampleFormControlTextarea33"
+                class="form-label form-lable-custom">{{'form.requestid'|translate}}<span class="jobID">
+                  1</span></label>
+            </div>
+            <div class="col-6">
+              <label for="inputNanme4" class="form-label form-lable-custom">{{'form.department'|translate}}</label>
+              <!-- <select class="form-control form-select" style="width: 100%" [(ngModel)]="department"
+              (change)="setJobDesignations(department)">
+              <ng-container *ngFor="let d of departments_list">
+                <option [value]="d">{{ d }}</option>
+              </ng-container>
+            </select> -->
+              <input type="text" class="form-control form-inp" style="width: 100%">
+            </div>
+            <div class="col-6">
+              <label for="inputNanme4" class="form-label form-lable-custom">{{'form.designation'|translate}}</label>
+              <input type="text" class="form-control form-inp" style="width: 100%" />
+              <!-- <select class="form-control form-select" style="width: 100%" [(ngModel)]="designation"
+              title="Designation-(Job Code)">
+              <ng-container>
+                <option [value]="d">{{ d }}</option>
+              </ng-container>
+            </select> -->
+            </div>
+            <div class="col-6">
+              <label for="inputAddress" class="form-label form-lable-custom">{{'form.job_start_date'|translate}}</label>
+              <input type="date" class="form-control form-inp" style="width: 100%" id="inputAddress" />
+            </div>
+            <div class="col-6">
+              <label for="inputAddress11" class="form-label form-lable-custom">{{'form.vacancy'|translate}}</label>
+              <input type="number" min="1" class="form-control form-inp" style="width: 100%" id="inputAddress11"
+                placeholder="eg., 1" />
+            </div>
+
+            <div class="internal-box"></div>
+            <div class="col-6">
+              <label for="inputAddress" class="form-label form-lable-custom">{{'form.company'|translate}}</label>
+              <select class="form-control form-select" style="width: 100%">
+                <option value="SWCC (1000)">SWCC (1000)</option>
+              </select>
+            </div>
+            <div class="col-6">
+              <label for="inputAddress" class="form-label form-lable-custom">{{'form.jobtitle'|translate}}</label>
+              <input type="text" class="form-control form-inp" style="width: 100%" id="inputAddress"
+                placeholder="eg., Consultant Engineer" />
+            </div>
+
+            <div class="col-12">
+              <label for="exampleFormControlTextarea3"
+                class="form-label form-lable-custom">{{'form.jobDescription'|translate}}</label>
+              <textarea class="form-control form-inp" style="width: 100%" id="exampleFormControlTextarea3"
+                placeholder="eg., Developing the operation of membrane based desalination." rows="4"></textarea>
+            </div>
+            <div class="col-12">
+              <label for="exampleFormControlTextarea3"
+                class="form-label form-lable-custom">{{'form.skillsRequired'|translate}}</label>
+              <textarea class="form-control form-inp" style="width: 100%" id="exampleFormControlTextarea3"
+                placeholder="eg., Project management, Analytical Chemistry, Problem solving" rows="2"></textarea>
+            </div>
+            <div class="col-12">
+              <label for="exampleFormControlTextarea34"
+                class="form-label form-lable-custom">{{'form.educationalQualifications'|translate}}</label>
+              <textarea class="form-control form-inp" style="width: 100%" id="exampleFormControlTextarea34"
+                placeholder="eg., M.Sc in Chemistry ." rows="2"></textarea>
+            </div>
+            <div class="col-6">
+              <label for="inputPassword4"
+                class="form-label form-lable-custom">{{'form.requiredLevelExperience'|translate}}</label>
+              <input type="text" class="form-control form-inp" style="width: 100%">
+              <!-- <select class="form-control form-select" style="width: 100%"
+              title="Designation-(Job Code)">
+              <ng-container *ngFor="let d of descriptions">
+                <option [value]="d">{{ d }}</option>
+              </ng-container>
+            </select> -->
+            </div>
+            <div class="col-6">
+              <label for="inputPassword4"
+                class="form-label form-lable-custom">{{'form.requiredYearsofExperience'|translate}}</label>
+              <select class="form-control form-select" style="width: 100%">
+                <option value="Any">Any</option>
+                <option value="1+">1+ years</option>
+                <option value="2+">2+ years</option>
+                <option value="3+">3+ years</option>
+                <option value="4+">4+ years</option>
+                <option value="5+">5+ years</option>
+                <option value="8+">8+ years</option>
+                <option value="10+">10+ years</option>
+                <option value="12+">12+ years</option>
+                <option value="15+">15+ years</option>
+                <option value="20+">20+ years</option>
+                <option value="25+">25+ years</option>
+                <option value="30+">30+ years</option>
+              </select>
+              <!-- <input type="text" class="form-control form-inp" style="width: 100%"/> -->
+
+              <!-- <input
+                  type="password"
+                  class="form-control form-inp"
+                  style="width: 75%"
+                  id="inputPassword4"
+                  placeholder="eg., 5+ years"
+                /> -->
+            </div>
+            <div class="col-6">
+              <label for="inputPassword4" class="form-label form-lable-custom">{{'form.jobLevel'|translate}}</label>
+              <select class="form-control form-select" style="width: 100%">
+                <option value="L1">L1</option>
+                <option value="L2">L2</option>
+                <option value="L3">L3</option>
+                <option value="L4">L4</option>
+                <option value="L5">L5</option>
+                <option value="L6">L6</option>
+              </select>
+            </div>
+            <div class="col-6">
+              <label for="inputAddress" class="form-label form-lable-custom">{{'form.hoursPerWeek'|translate}}</label>
+              <input type="number" class="form-control form-inp" style="width: 100%" id="inputAddress"
+                placeholder="eg., 40" />
+            </div>
+            <div class="col-6">
+              <label for="inputAddress" class="form-label form-lable-custom">{{'form.fte'|translate}}</label>
+              <input type="text" class="form-control form-inp" style="width: 100%" placeholder="eg., 1.0" />
+            </div>
+            <div class="internal-box"></div>
+            <div class="col-6">
+              <label for="inputNanme4" class="form-label form-lable-custom">{{'form.country'|translate}}</label>
+              <input type="text" class="form-control form-inp" style="width: 100%">
+              <!-- <select class="form-control form-select" style="width: 100%"
+              title="Designation-(Job Code)">
+              <ng-container *ngFor="let d of countries">
+                <option [value]="d">{{ d }}</option>
+              </ng-container>
+            </select> -->
+            </div>
+            <div class="col-6">
+              <label for="inputNanme4" class="form-label form-lable-custom">{{'form.location'|translate}}</label>
+              <input type="text" class="form-control form-inp" style="width: 100%">
+              <!-- <select class="form-control form-select" style="width: 100%">
+              <ng-container *ngFor="let d of cities">
+                <option [value]="d">{{ d }}</option>
+              </ng-container>
+            </select> -->
+            </div>
+            <div class="col-6">
+              <label for="inputAddress11"
+                class="form-label form-lable-custom">{{'form.requiredTravel'|translate}}</label>
+              <input type="numeric" min="1" class="form-control form-inp" style="width: 100%" id="inputAddress11"
+                placeholder="eg., 0-50%" />
+            </div>
+
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary temp-clr-try">
+                {{'form.submit'|translate}}
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

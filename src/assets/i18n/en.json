@@ -1,0 +1,23 @@
+{
+  "form.vacancy_title": "Job Vacancy Requisition",
+  "form.costcenter": "Cost Center",
+  "form.requestid": "Request ID",
+  "form.department": "Department",
+  "form.designation": "Designation",
+  "form.job_start_date": "Job Start Date",
+  "form.vacancy": "Vacancy",
+  "form.company": "Company",
+  "form.jobtitle": "Job Title",
+  "form.jobDescription": "Job Description",
+  "form.skillsRequired": "Skills required",
+  "form.educationalQualifications": "Educational qualifications",
+  "form.requiredLevelExperience": "Required Level Experience",
+  "form.requiredYearsofExperience": "Required Years of Experience",
+  "form.jobLevel": "Job level",
+  "form.hoursPerWeek": "Hours Per Week",
+  "form.fte": "form.hoursPerWeek",
+  "form.country": "Job location(country)",
+  "form.location": "Job Location",
+  "form.requiredTravel": "Required Travel",
+  "form.submit": "Submit"
+}
